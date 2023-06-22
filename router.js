@@ -30,7 +30,7 @@ router.get('/edit/:id', (req,res)=>{
 
 router.get('/delete/:id', (req, res) => {
     const id = req.params.id;
-    conexion.query('DELETE FROM users WHERE id = ?',[id], (error, results)=>{
+    conexion.query('DELETE FROM users WHERE id = ?',[id], (error, resutts)=>{
         if(error){
             console.log(error);
         }else{           
